@@ -1,0 +1,12 @@
+.header {
+    .header__logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__menu {
+        ul {
+            list-style: none;
+        }
+    }
+}
