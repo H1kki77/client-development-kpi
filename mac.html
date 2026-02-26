@@ -9,21 +9,126 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header class="header">
-        <img src="img/apple-logo.svg" alt="apple-logo" class="header__logo">
-        <nav class="header__menu">
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="mac.html">Mac</a></li>
-                <li><a href="iphone.html">iPhone</a></li>
-                <li><a href="accessories.html">Аксесуари</a></li>
-            </ul>
-        </nav>
-    </header>
+<body bgcolor="#f5f5f7" link="#000" vlink="#000" alink="#000">
+    <div class="container">
+        <header class="header">
+            <img id="top" src="img/apple-logo.svg" alt="apple-logo" class="header__logo">
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="mac.html">Mac</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="accessories.html">Аксесуари</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <h1>Тема: Apple</h1>
-    <p></p>
+        <h1>Компʼютери Mac</h1>
+        <section class="intro-section">
+            <h2>Еволюція Mac: Від класики до Apple Silicon</h2>
+            <p>
+                Історично комп'ютери Mac працювали на процесорах від <b>Intel</b>, які використовували класичну
+                архітектуру
+                <i>x86</i>. Це були потужні машини, але вони мали суттєві обмеження щодо енергоспоживання та
+                тепловіддачі.
+            </p>
+            <p>
+                У 2020 році компанія зробила революційний крок, представивши власні чипи серії <strong>Apple
+                    M-Series</strong>
+                (побудовані на мобільній архітектурі <i>ARM</i>). Унікальність полягає в тому, що процесор, графіка та
+                уніфікована пам'ять об'єднані на одному кристалі. Завдяки цьому системі не потрібно витрачати час на
+                пересилання
+                даних туди-сюди — навіть базові 8 ГБ об'єднаної пам'яті працюють так само ефективно і швидко, як 16 ГБ
+                на старих
+                системах.
+            </p>
+        </section>
+
+        <section id="processors" class="table-section">
+            <table border="1" cellspacing="0" cellpadding="15" width="100%">
+
+                <caption>
+                    <h3>Порівняння архітектур</h3>
+                </caption>
+
+                <colgroup>
+                    <col width="30%">
+                    <col width="35%" align="center">
+                    <col width="35%" align="center">
+                </colgroup>
+
+                <tr bgcolor="#1d1d1f" align="center">
+                    <th>
+                        <font color="#ffffff">Критерій</font>
+                    </th>
+                    <th>
+                        <font color="#ffffff">Старе покоління (Intel)</font>
+                    </th>
+                    <th>
+                        <font color="#ffffff">Нове покоління (Apple M)</font>
+                    </th>
+                </tr>
+
+                <tr align="center">
+                    <td><b>Візуальний вигляд</b></td>
+                    <td><img src="img/intel.png" alt="Intel Chip" width="150"></td>
+                    <td><img src="img/m1.png" alt="Apple M Chip" width="180"></td>
+                </tr>
+
+                <tr align="center">
+                    <td><b>Детальні специфікації</b></td>
+                    <td><a href="https://www.intel.com" target="_blank">Сайт Intel</a></td>
+                    <td><a href="https://www.apple.com/mac/" target="_blank">Сайт Apple Mac</a></td>
+                </tr>
+
+                <tr align="center">
+                    <td><b>Тип інструкцій</b></td>
+                    <td>Складна архітектура (CISC), високе споживання енергії.</td>
+                    <td>Спрощена архітектура (RISC), оптимізована під енергозбереження.</td>
+                </tr>
+
+                <tr bgcolor="#f5f5f7" align="center">
+                    <td colspan="3"><b>Реальний досвід використання</b></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" valign="middle"><b>Енергоефективність та Комфорт</b></td>
+                    <td>Батарея тримає 5-7 годин. Потрібно завжди носити з собою зарядку.</td>
+                    <td>Батарея тримає 15-22 години. Можна спокійно йти на пари чи в офіс без блоку живлення.</td>
+                </tr>
+                <tr>
+                    <td>Під навантаженням сильно гріється, кулери голосно шумлять.</td>
+                    <td>Залишається холодним. Працює абсолютно безшумно (кулери вмикаються вкрай рідко).</td>
+                </tr>
+
+                <tr>
+                    <td><b>Продуктивність (Ігри та Робота)</b></td>
+                    <td>Ноутбук повільніше виходить зі сну. Важкі ігри йдуть зі скрипом.</td>
+                    <td>Миттєвий вихід зі сну. Легко тягне ААА-ігри (наприклад, Baldur's Gate 3) та важкі середовища
+                        розробки.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <h3 id="footer__info" class="footer__title">Контакти та деталі</h3>
+                <p class="footer__text">
+                    Всі матеріали Apple Inc. використовуються виключно в некомерційних цілях.
+                </p>
+                <div class="footer__links">
+                    <a href="https://github.com/H1kki77/client-development-kpi" target="_blank" class="footer__link">
+                        <img src="img/github-logo.svg" alt="github-logo">
+                    </a>
+                    <a href="https://t.me/vlad_korobai" target="_blank" class="footer__link">
+                        <img src="img/telegram-logo.svg" alt="telegram-logo">
+                    </a>
+                </div>
+            </div>
+            <a href="#top" class="footer__link-up">↑</a>
+        </footer>
+    </div>
 </body>
 
 </html>

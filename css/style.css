@@ -1,12 +1,232 @@
-.header {
-    .header__logo {
-        width: 20px;
-        height: 20px;
+html {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container {
+
+    section,
+    footer {
+        padding: 0 30px;
+        margin-top: 10px;
     }
 
-    .header__menu {
+    padding: 0 100px;
+
+    #top {
+        text-align: center;
+    }
+
+    .header {
+        .header__logo {
+            display: block;
+            margin: 0 auto;
+            width: 35px;
+        }
+
+        .header__menu {
+            ul {
+                margin-top: 20px;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+
+                a {
+                    color: #000;
+                    font-weight: 300;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer {
+        position: relative;
+
+        .footer__link-up {
+            bottom: 20px;
+            right: 20px;
+            position: fixed;
+            font-size: 26px;
+            text-decoration: none;
+            color: #000;
+            display: block;
+            text-align: right;
+        }
+
+        .footer__links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .footer__link {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+    }
+
+
+
+
+    .apple-park img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .biometrics-card {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px 0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .biometrics-card__left {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .biometrics-card__title {
+        margin-top: 0;
+    }
+
+    .biometrics-card__list {
+        margin-bottom: 20px;
+    }
+
+    .biometrics-card__icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .biometrics-card__right {
+        text-align: center;
+        border-left: 1px solid #e5e5ea;
+        padding-left: 30px;
+    }
+
+    .biometrics-card__subtitle {
+        font-size: 12px;
+        color: #86868b;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .intro-section {
+        background-color: #fff;
+        margin-top: 40px;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .features-section {
+        display: flex;
+        gap: 50px;
+
+        dl {
+            line-height: normal;
+
+            dt {
+                margin-top: 20px;
+            }
+
+            dd {
+                margin: 0;
+            }
+        }
+    }
+
+
+    .navigation-section {
+
         ul {
             list-style: none;
+            padding: 0;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .design-section {
+        background-color: #fff;
+        margin-top: 40px;
+        padding: 30px;
+        padding-bottom: 0;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+        img {
+            display: block;
+            margin: 20px auto 0;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .accessories-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+
+        .accessory-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+            img {
+                display: block;
+                margin: 0 auto 20px;
+                height: 120px;
+                object-fit: contain;
+            }
+
+            h4 {
+                margin: 10px 0;
+                font-size: 20px;
+                color: #1d1d1f;
+            }
+
+            p {
+                font-size: 14px;
+                color: #86868b;
+                line-height: 1.4;
+                margin-bottom: 20px;
+            }
+
+            a {
+                color: #0066cc;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+            }
         }
     }
 }

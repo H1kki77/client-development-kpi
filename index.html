@@ -9,21 +9,157 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header class="header">
-        <img src="img/apple-logo.svg" alt="apple-logo" class="header__logo">
-        <nav class="header__menu">
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="mac.html">Mac</a></li>
-                <li><a href="iphone.html">iPhone</a></li>
-                <li><a href="accessories.html">Аксесуари</a></li>
-            </ul>
-        </nav>
-    </header>
+<body bgcolor="#f5f5f7" link="#000" vlink="#000" alink="#000">
+    <div class="container">
+        <header class="header">
+            <img id="top" src="img/apple-logo.svg" alt="apple-logo" class="header__logo">
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="mac.html">Mac</a></li>
+                    <li><a href="iphone.html">iPhone</a></li>
+                    <li><a href="accessories.html">Аксесуари</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <h1>Тема: Apple</h1>
-    <p></p>
+
+        <h1>Apple ecosystem</h1>
+
+        <section class="intro-section">
+            <p>
+                <b>Apple Inc.</b> - це американська технологічна компанія, яка славиться своєю закритою та ідеально
+                оптимізованою екосистемою. <i>Програмне та апаратне забезпечення</i> розробляються паралельно, що
+                дозволяє
+                досягти унікальної стабільності.
+            </p>
+
+            <p>
+                Фундаментом успіху є <strong>інтегрована екосистема</strong>. Це безшовний простір, де апаратне
+                забезпечення,
+                програмні сервіси та хмарні технології працюють як єдиний організм. Завдяки закритому циклу розробки,
+                компанія
+                гарантує найвищий рівень оптимізації та захисту персональних даних своїх клієнтів.
+            </p>
+        </section>
+
+
+        <section class="features-section">
+            <div class="technologies__wrapper">
+                <h3>Ключові технології взаємодії:</h3>
+                <dl>
+                    <dt><b>Handoff</b></dt>
+                    <dd>
+                        Дозволяє почати роботу на одному пристрої та миттєво продовжити її на іншому (наприклад,
+                        написання
+                        листа
+                        або робота
+                        в браузері).
+                    </dd>
+
+                    <dt><b>Sidecar</b></dt>
+                    <dd>
+                        Технологія, що дозволяє використовувати iPad як другий монітор або графічний планшет для вашого
+                        Mac.
+                    </dd>
+
+                    <dt><b>AirDrop</b></dt>
+                    <dd>
+                        Швидкий та бездротовий спосіб обміну файлами між пристроями Apple без необхідності підключення
+                        до
+                        інтернету.
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="values__wrapper">
+                <h3>Ключові цінності бренду:</h3>
+                <dl>
+                    <dt><b>Екологічність</b></dt>
+                    <dd>Компанія прагне до повної вуглецевої нейтральності у виробництві до 2030 року.</dd>
+
+                    <dt><b>Інклюзивність</b></dt>
+                    <dd>Технології мають бути доступними для всіх, тому в пристрої вбудовано безліч функцій
+                        універсального
+                        доступу.</dd>
+                </dl>
+            </div>
+
+        </section>
+
+        <section class="biometrics-card">
+            <div class="biometrics-card__left">
+                <h3 class="biometrics-card__title">Біометрична безпека</h3>
+                <p class="biometrics-card__text">
+                    Ваші дані захищені системою <b>Secure Enclave</b>. Процес автентифікації включає:
+                </p>
+
+                <ol class="biometrics-card__list" type="1">
+                    <li>Сканування обличчя або відбитка пальця.</li>
+                    <li>Створення зашифрованого математичного образу.</li>
+                    <li>Локальне збереження на пристрої.</li>
+                </ol>
+
+                <div class="biometrics-card__icons">
+                    <img src="img/touch_id.svg" alt="Touch ID Icon" width="50" height="50">
+                    <img src="img/face_id.webp" alt="Face ID Small" width="50" height="50">
+                </div>
+            </div>
+
+            <div class="biometrics-card__right">
+                <img src="img/face_id.webp" alt="Face ID Large" width="100" height="100">
+                <p class="biometrics-card__subtitle">Просторове сканування</p>
+            </div>
+        </section>
+
+
+        <section class="visualisation-section">
+            <h3>Візуалізація бренду</h3>
+            <p>Клацніть на зображення кампусу Apple Park, щоб переглянути його у високій якості:</p>
+
+            <a class="apple-park" href="img/apple-park-photo.jpeg" target="_blank">
+                <img style="border-radius: 20px;" src="img/apple-park-photo.jpeg" alt="Apple Park Headquarters"
+                    width="600">
+            </a>
+        </section>
+
+        <section class="navigation-section">
+            <h3>Навігаційні посилання:</h3>
+            <ul>
+                <li><a href="https://www.apple.com" target="_blank">Офіційний сайт Apple</a></li>
+                <li><a href="mac.html#processors">Характеристики процесорів (порівняння інтел та арм на сторінці з
+                        маками)</a></li>
+                <li><a href="#footer__info">Контакти та деталі</a></li>
+            </ul>
+        </section>
+
+
+        <section class="video-section">
+            <h3>Apple Silicon</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/5AwdkGKmZ0I?si=yq6IUolJm2GEvgcN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <h3 id="footer__info" class="footer__title">Контакти та деталі</h3>
+                <p class="footer__text">
+                    Всі матеріали Apple Inc. використовуються виключно в некомерційних цілях.
+                </p>
+                <div class="footer__links">
+                    <a href="https://github.com/H1kki77/client-development-kpi" target="_blank"
+                        class="footer__link"><img src="img/github-logo.svg" alt="github-logo">
+                    </a>
+                    <a href="https://t.me/vlad_korobai" target="_blank" class="footer__link"><img
+                            src="img/telegram-logo.svg" alt="telegram-logo"></a>
+
+                </div>
+            </div>
+            <a href="#top" class="footer__link-up">↑</a>
+        </footer>
+    </div>
 </body>
 
 </html>
